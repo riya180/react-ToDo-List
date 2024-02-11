@@ -1,22 +1,14 @@
 import react from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPeToSquare } from "@fortawesome/free-solid-svg-icons";
-import { faTrash } from "@fortawesome/free-solid-svg-icons";
+import { FaEdit } from "react-icons/fa";
+import { RiDeleteBin5Line } from "react-icons/ri";
 
-export const Todo = () => {
+export const Todo = ({task}) => {
     return (
-        <div className="Todo">
-            <p>go to school</p>
+        <div className="Todo" >
+            <p> {task.task} <FaEdit /> <RiDeleteBin5Line /> </p>
+             <div>
+             
           
-            <div>
-            <FontAwesomeIcon icon="fa-solid fa-nfc-pen" />
-                <FontAwesomeIcon icon='faPeToSquare'/>
-                <FontAwesomeIcon icon='faTrash' />
-                <FontAwesomeIcon icon="fas fa-edit" />
-                
-                
-                
-
             </div>
      
         </div>

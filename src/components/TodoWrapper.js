@@ -15,9 +15,11 @@ export const TodoWrapper = () => {
 
     return(
         <div className="TodoWraper">
+            <h1>Get things Done</h1>
             <TodoForm addTodo={addTodo} />
-            <Todo />
-            
+            {todos.map((todo, index) => (
+             <Todo task={todo} key={index} />
+            ))}    
         </div>
     )
 }

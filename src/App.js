@@ -1,12 +1,11 @@
-import React from 'react';
-import './style.css';
-import { TodoWrapper } from './components/TodoWrapper';
+import React from 'react'
+import './style.css'
+import { TodoWrapper } from './components/TodoWrapper'
 
 export default function App() {
-  return (
-    <div>
-      <TodoWrapper />
-      
-    </div>
-  );
+    return (
+        <div>
+            <TodoWrapper />
+        </div>
+    )
 }

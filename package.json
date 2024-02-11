@@ -23,6 +23,7 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
+    "prettier": "3.2.5",
     "react-scripts": "latest"
   },
   "browserslist": {

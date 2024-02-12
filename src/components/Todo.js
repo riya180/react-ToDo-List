@@ -1,19 +1,14 @@
-import react from "react";
-import { FaEdit } from "react-icons/fa";
-import { RiDeleteBin5Line } from "react-icons/ri";
-
-export const Todo = ({task}) => {
+import './styles.css'
+export const Todo = ({ task, deleteTodo }) => {
     return (
-        <div className="Todo" >
-            <p> {task.task} <FaEdit /> <RiDeleteBin5Line /> </p>
-             <div>
-             
-          
+        <div className="todo">
+            <div className="todoItem">{task.task}</div>
+            <div className="todoItem">
+                <button>Edit</button>
             </div>
-     
+            <div className="todoItem">
+                <button onClick={() => deleteTodo(task.id)}>Delete</button>
+            </div>
         </div>
-        
-        
-       
     )
 }

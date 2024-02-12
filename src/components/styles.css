@@ -1,0 +1,11 @@
+.todo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.todoItem {
+    display: flex;
+    padding: 10px;
+}
